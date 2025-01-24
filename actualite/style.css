@@ -1,0 +1,486 @@
+.container {
+    background-color: rgba(221, 161, 94, 1);
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    text-decoration: none;
+}
+
+.police-inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: auto;
+  font-style: normal;
+}
+
+nav {
+    background-color: rgba(221, 161, 94, 1);
+    height: 10vh;
+}
+
+.actualite {
+    padding-top: 30px;
+    font-weight: 400;
+}
+
+.logo {
+    padding-left: 20px;
+    width: 200px;
+}
+
+.menu, .ul {
+    list-style-type: none;
+}
+
+.menu, .li {
+    float: left;
+}
+
+.menu, .li, a {
+    display: flex;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.hover-actu {
+    color: white;
+}
+
+.hover-link:hover { 
+    color: white; /* Couleur du lien au survol */
+}
+
+.bouton-lien {
+    background-color: rgba(188, 108, 37, 1);
+    border: 0px;
+    border-radius: 10px;  
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+    justify-content: center;
+    text-decoration: none;
+  }
+
+ul { 
+    list-style-type: disc;
+}
+
+.zoom-menu {
+    width: 100%;
+    transition: transform .5s;
+}
+
+.zoom-menu:hover {
+    transform: scale(1.2);
+}
+
+.actualite {
+    color: rgba(155, 101, 46, 1);
+    font-size: 400%;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.titreRecette1 {
+    color: rgba(155, 101, 46, 1);
+    font-size: 400%;
+    font-weight: 400;
+    text-align: center;
+}
+
+.titreRecette2 {
+    color: rgba(155, 101, 46, 1);
+    font-size: 200%;
+    text-align: center;
+}
+
+.menu1 {
+    width: 30%;
+    text-align: left;
+}
+
+.menu2 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    width: 50%;
+    text-align: center;
+}
+
+.regalez {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.bouton-footer {
+    background-color: rgba(255, 181, 36, 1);
+    border: 0px;
+    border-radius: 10px;
+    margin-top: 50px;   
+    padding: 10px;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+}  
+
+.bandeau {
+    height: 100%;
+    width: 100%;
+}
+
+.lorem .lacarte{
+    padding-left: 0%;
+    text-align: left;
+}
+
+.section1, .lacarte  {
+    display :flex;
+    justify-content: left;
+    align-items: start;
+    align-content: start;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.section1, .lorem {
+    display: flex;
+    text-align: start;
+    margin: 0px;
+    gap: 0px;
+    padding: 0%;
+    width: 100%;
+}
+
+.contrast {
+    filter: contrast(50%);
+    transition: filter 1s ease;
+}
+
+.contrast:hover {
+    filter:contrast(1);
+}
+
+.recette {
+    padding-left: 20px;
+}
+
+.recette-list {
+    padding-left: 20px;
+}
+
+.preparation {
+    padding-left: 20px;
+    color: rgba(155, 101, 46, 1);
+}
+
+.lacarte {
+    text-align: center;
+    color: rgba(155, 101, 46, 1);
+}
+
+.section2 {
+    display :flex;
+    justify-content: space-between; 
+    gap: 10px;
+}
+
+.box, img {
+    width: 100%;
+}
+
+.image-zoom {
+    width: 100%;
+    overflow: hidden;
+}
+
+.zoom {
+    width: 100%;
+    transition: transform .5s;
+}
+
+.zoom:hover {
+    transform: scale(1.5);
+}
+
+.populaires {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 10px 20px 10px 0px;
+}
+
+.formulaire {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    background-color: rgba(221, 161, 94, 1);
+    margin-top: 10px;
+}
+
+.formG {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.f1 {
+    border-top: solid 2px black;
+    border-top-width: 2px;
+    padding-left: 50px;
+    text-align: left;
+}
+
+.f2 {
+    margin-left: 100px;
+    font-size: small;
+    text-align: left;
+}
+
+.commander {
+    margin-top: 30px;
+}
+
+.formulaire .f3 {
+    justify-content: flex-end;
+    align-items: end;
+    flex-direction: column;
+    margin-left: 450px;
+}
+
+.container {
+    background-color: rgba(221, 161, 94, 1);
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.police-inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: auto;
+  font-style: normal;
+}
+
+nav {
+    background-color: rgba(221, 161, 94, 1);
+    height: 10vh;
+}
+
+.logo {
+    padding-left: 20px;
+    width: 200px;
+}
+
+.menu, .ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.menu, .li {
+    float: left;
+}
+
+.menu, .li, a {
+    display: flex;  
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.hover-link:hover { 
+    color: white; /* Couleur du lien au survol */
+}
+
+.bouton-lien {
+    background-color: rgba(188, 108, 37, 1);
+    border: 0px;
+    border-radius: 10px;  
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+    justify-content: center;
+    text-decoration: none;
+  }
+
+.zoom-menu {
+    width: 100%;
+    transition: transform .5s;
+}
+
+.zoom-menu:hover {
+    transform: scale(1.2);
+}
+
+.bouton-footer {
+    background-color: rgba(255, 181, 36, 1);
+    border: 0px;
+    border-radius: 10px;
+    margin-top: 50px;   
+    padding: 10px;
+    color: black;
+    font-size: 20px;
+    justify-content: center;
+    text-decoration: none;
+}  
+
+.bandeau {
+    height: 100%;
+    width: 100%;
+}
+
+.lorem {
+    padding-right: 0%;
+}
+
+.section1, .boiteOrange {
+    display :flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.section1, .boiteOrange, iframe {
+    display :flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 10%;
+    width: 70%;
+}
+
+.section1, .titi, .histoire, .lorem {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin: 0;
+    gap: 10px;
+    padding: 0%;
+    width: 100%;
+}
+
+.contrast {
+    filter: contrast(50%);
+    transition: filter 1s ease;
+}
+
+.contrast:hover {
+    filter:contrast(1);
+}
+
+.lacarte {
+    text-align: center;
+    color: rgba(155, 101, 46, 1);
+}
+
+.section2 {
+    display :flex;
+    justify-content: space-between; 
+    gap: 10px;
+}
+
+.box, img {
+    width: 100%;
+}
+
+.image-zoom {
+    width: 100%;
+    overflow: hidden;
+}
+
+.zoom {
+    width: 100%;
+    transition: transform .5s;
+}
+
+.zoom:hover {
+    transform: scale(1.5);
+}
+
+.populaires {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 10px 20px 10px 0px;
+}
+
+.formulaire {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    background-color: rgba(221, 161, 94, 1);
+    margin-top: 10px;
+}
+
+.formG {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.f1 {
+    border-top: solid 2px black;
+    border-top-width: 2px;
+    padding-left: 50px;
+    text-align: left;
+}
+
+.f2 {
+    margin-left: 100px;
+    font-size: small;
+    text-align: left;
+}
+
+.commander {
+    margin-top: 30px;
+}
+
+.formulaire .f3 {
+    justify-content: flex-end;
+    align-items: end;
+    flex-direction: column;
+    margin-left: 450px;                              
+}
+
+.formulaire .f4 {
+    border-top: solid 2px black;
+    justify-content: flex-end;
+    align-items: end;
+    flex-direction: column;                              
+}
+
+.icones {
+    width: 10%;
+    height: 10%;
+    padding-right: 10px;
+    border: 0;
+}
+
+.formulaire .f4 {
+    border-top: solid 2px black;
+    justify-content: flex-end;
+    align-items: end;
+    flex-direction: column;                              
+}
+
+.icones {
+    width: 10%;
+    height: 10%;
+    padding-right: 10px;
+    border: 0;
+}
