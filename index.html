@@ -7,7 +7,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,800&family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="images/favicone.png" />
@@ -16,7 +16,9 @@
     <body class="police-inter">
 
     <header class="container">
-        <img class="logo" src="images/icone_titi.png">
+        <a href="index.html" aria-label="Accueil Titi Burger">
+            <img class="logo" src="images/icone_titi.png" alt="Logo Titi Burger">
+        </a>
         <nav class="menu">
             <ul>
                 <li><a href="#" class="hover-link">La carte</a></li>
@@ -25,19 +27,19 @@
                 <li><a href="actualite/actualite.html" class="hover-link">Actualité</a></li>
                 <li><a href="#" target="_blank" class="bouton-lien zoom-menu">Fais ton burger</a></li>
             </ul>
+        </nav>
     </header>
 
-    <section id="lacarte"></section>
     <div>
         <main>
             <section>
-                <img class="bandeau" src="images/bandeau.png">
+                <img class="bandeau" src="images/bandeau.png" alt="Bandeau Titi Burger">
             </section>
             <section class="section1">
-                  <div class="boiteOrange">
+                  <div class="boiteOrange story-layout">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/zt4zIbL7Cr8?si=DKdjdu0lyYpu9-x8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     
-                    <div class="section1">
+                    <div class="story-content">
                         <h1 class="titi">Titi Story</h1>
                         <h3 class="histoire">L'histoire d'un burger pas comme les autres</h3>
                         <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur libero corporis nulla, ad ipsam omnis fugiat aperiam atque sint maxime cum officiis voluptatem reiciendis consectetur distinctio, laboriosam vel rem dolores.</p>
@@ -45,26 +47,29 @@
                   </div>
                </section> 
 
-               <h1 class="lacarte">La carte</h1><br>
+               <h1 id="lacarte" class="lacarte">La carte</h1><br>
                <h2>Nos burgers les plus populaires</h2>
 
                <section class="section2 populaires">
-                    <div class="box contrast"><img src="images/burger4.png">
-                        <div class="populaires">
-                            <p><div>Le Titi Raclette</div>
-                            <div><a href="#" target="_blank" class="bouton-lien zoom-menu">Commander</a></div></p>
+                    <div class="box contrast">
+                        <img src="images/burger4.png" alt="Le Titi Raclette">
+                        <div class="populaires card-content">
+                            <h3>Le Titi Raclette</h3>
+                            <a href="#" target="_blank" class="bouton-lien zoom-menu">Commander</a>
                         </div>
                     </div>
-                    <div class="box contrast"><img src="images/burger2.png">
-                        <div class="populaires">
-                            <p><div>Le Titi Veggi</div>
-                            <div><a href="#" target="_blank" class="bouton-lien zoom-menu">Commander</a></div></p>
+                    <div class="box contrast">
+                        <img src="images/burger2.png" alt="Le Titi Veggi">
+                        <div class="populaires card-content">
+                            <h3>Le Titi Veggi</h3>
+                            <a href="#" target="_blank" class="bouton-lien zoom-menu">Commander</a>
                         </div>
                     </div>
-                    <div class="box contrast"><img src="images/burger6.png">
-                        <div class="populaires">
-                            <p><div>Le Titi Parisien</div>
-                            <div><a href="#" target="_blank" class="bouton-lien zoom-menu">Commander</a></div></p>
+                    <div class="box contrast">
+                        <img src="images/burger6.png" alt="Le Titi Parisien">
+                        <div class="populaires card-content">
+                            <h3>Le Titi Parisien</h3>
+                            <a href="#" target="_blank" class="bouton-lien zoom-menu">Commander</a>
                         </div>
                     </div>
                </section>
@@ -73,22 +78,22 @@
 
                <section class="section2 populaires">
                     <div class="box image-zoom">
-                        <img class="zoom" src="images/icone1.png">
+                        <img class="zoom" src="images/icone1.png" alt="Illustration restaurant 1">
                     </div>
                     <div class="box image-zoom">
-                        <img class="zoom" src="images/salle1.png">
+                        <img class="zoom" src="images/salle1.png" alt="Salle du restaurant 1">
                     </div>
                     <div class="box image-zoom">
-                        <img class="zoom" src="images/salle3.png">
+                        <img class="zoom" src="images/salle3.png" alt="Salle du restaurant 2">
                     </div>
                     <div class="box image-zoom">
-                        <img class="zoom" src="images/lampe.png">
+                        <img class="zoom" src="images/lampe.png" alt="Ambiance lumineuse du restaurant">
                     </div>
                     <div class="box image-zoom">
-                        <img class="zoom" src="images/burger7.png">
+                        <img class="zoom" src="images/burger7.png" alt="Burger maison">
                     </div>
                     <div class="box image-zoom">
-                        <img class="zoom" src="images/instagram.png">
+                        <img class="zoom" src="images/instagram.png" alt="Publication Instagram">
                     </div>
                </section>
         </main>
