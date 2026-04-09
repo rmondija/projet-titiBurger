@@ -49,6 +49,16 @@ h3,
     gap: 24px;
     border-bottom: 2px solid rgba(58, 43, 31, 0.2);
     animation: fade-slide-down 0.6s ease both;
+    position: relative;
+    z-index: 10002;
+}
+
+.logo-toggle {
+    background: none;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    cursor: default;
 }
 
 .logo {
@@ -103,10 +113,13 @@ h3,
     transform: translateY(-2px) scale(1.04);
 }
 
+/* Bouton hamburger (visible uniquement mobile/tablette) */
 main {
     width: min(1180px, 100% - 32px);
     margin: 0 auto;
     animation: fade-up 0.7s ease both;
+    position: relative;
+    z-index: 1;
 }
 
 .bandeau {
@@ -367,18 +380,86 @@ h2 {
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
     .container {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 14px 16px;
+        align-items: center;
+        justify-content: space-between;
+        gap: 14px;
+        padding: 12px 16px;
+    }
+
+    .logo-toggle {
+        cursor: pointer;
+        position: relative;
+        z-index: 10000;
+    }
+
+    .logo {
+        width: 132px;
+    }
+
+    .menu {
+        display: none;
+        position: fixed;
+        top: 84px;
+        left: 0;
+        width: 100%;
+        height: auto;
+        background: linear-gradient(90deg, #dca061 0%, var(--sand) 60%, #e7bc8f 100%);
+        z-index: 9999;
+        padding: 16px 0;
+        overflow: visible;
+    }
+
+    .menu.active {
+        display: block;
     }
 
     .menu ul {
-        flex-wrap: wrap;
-        gap: 10px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 0;
     }
 
+    .menu li {
+        width: 100%;
+    }
+
+    .menu ul li a:not(.bouton-lien) {
+        display: block;
+        padding: 12px 24px;
+        border-bottom: 1px solid rgba(58, 43, 31, 0.15);
+        font-size: 0.95rem;
+        color: #111;
+    }
+
+    .menu ul li a:not(.bouton-lien):hover,
+    .menu ul li a.hover-actu:hover {
+        color: #fff;
+    }
+
+    .menu .bouton-lien {
+        margin: 12px 24px;
+        justify-content: center;
+        width: calc(100% - 48px);
+    }
+
+    .resto-gallery {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .resto-gallery .box {
+        flex: 0 1 280px;
+        width: min(280px, 100%);
+    }
+}
+
+
+
+@media (max-width: 700px) {
     main {
         width: min(1180px, 100% - 20px);
     }
@@ -390,6 +471,12 @@ h2 {
     .populaires {
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    .resto-gallery {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
 
     .formG {
