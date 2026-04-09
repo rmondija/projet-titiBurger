@@ -399,20 +399,32 @@ h2 {
     }
 
     .menu {
-        display: none;
+        display: block;
         position: fixed;
         top: 84px;
         left: 0;
         width: 100%;
-        height: auto;
+        max-height: 0;
         background: linear-gradient(90deg, #dca061 0%, var(--sand) 60%, #e7bc8f 100%);
         z-index: 9999;
-        padding: 16px 0;
-        overflow: visible;
+        padding: 0;
+        overflow: hidden;
+        opacity: 0;
+        transform: translateY(-10px);
+        visibility: hidden;
+        pointer-events: none;
+        transition: max-height 0.35s ease, opacity 0.28s ease, transform 0.35s ease, padding 0.35s ease, visibility 0s linear 0.35s;
     }
 
     .menu.active {
-        display: block;
+        max-height: 75vh;
+        padding: 16px 0;
+        overflow-y: auto;
+        opacity: 1;
+        transform: translateY(0);
+        visibility: visible;
+        pointer-events: auto;
+        transition: max-height 0.35s ease, opacity 0.28s ease, transform 0.35s ease, padding 0.35s ease;
     }
 
     .menu ul {
